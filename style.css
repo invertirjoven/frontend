@@ -24,6 +24,15 @@ button.btn-primary, input.btn, a.btn{
     font-weight: bold;
 }
 
+button.btn:hover{
+    text-decoration: none !important;
+}
+
+button.btn-primary:hover{
+    background-color: #FF7733;
+    border-color: #FF7733;
+}
+
 button.btn-outline-primary, input.btn-outline-primary, a.btn-outline-primary{
     background-color: #ffffff;
     border-color: #FF6619;
@@ -36,10 +45,10 @@ button.btn-outline-primary:hover, input.btn-outline-primary:hover, a.btn-outline
     color: #ffffff;
     background-color:#FF6619;
     border-color: #FF6619;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-h3.text-dark{
+h3.text-dark, label.text-dark, strong.text-dark{
     color: #4D4D4D !important;
 }
 
@@ -53,4 +62,37 @@ h3.text-dark{
 
 .w-90{
     width: 90%;
+}
+
+.bg-left{
+    background-color: #FF884D;
+    height: 100vh;
+    transform: skew(-4deg);
+    left: -2%;
+    border-radius: 0 0 100px 0;
+}
+
+label{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input.form-control{
+    border-width: 0px;
+    background-color: #F2F2F2;
+}
+
+input.form-control:focus{
+    border-color: #FF9966;
+    border-width: 2px;
+    box-shadow: 0px 0px 0px;
+    background-color: #F2F2F2;
+}
+
+a.text-primary{
+    color: #FF6619 !important;
+}
+
+a.text-primary:hover{
+    color: #FF7733 !important;
 }
