@@ -66,15 +66,16 @@ h3.text-dark, label.text-dark, strong.text-dark{
 
 .bg-left{
     background-color: #FF884D;
-    height: 100vh;
+    min-height: 100vh;
     transform: skew(-4deg);
-    left: -2%;
+    left: -3%;
     border-radius: 0 0 100px 0;
 }
 
 label{
     font-weight: 600;
     font-size: 18px;
+    color: #4D4D4D !important;
 }
 
 input.form-control{
