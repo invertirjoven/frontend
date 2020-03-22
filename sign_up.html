@@ -77,7 +77,14 @@
                 <!-- Password input -->
                 <div class="form-group">
                     <label class="text-dark" for="password">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="password">
+                        <div class="input-group-append">
+                            <button class="show-password" type="button" name="button" onclick="show_password()">
+                                <i class="fa fa-eye mx-2 text-dark"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Terms and conditions -->
@@ -115,5 +122,17 @@
             </form>
         </div>
     </div>
+
+    <script>
+        function show_password() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+    </script>
 
     <body>

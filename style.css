@@ -129,3 +129,19 @@ a.text-primary{
 a.text-primary:active{
     color: #FF7733 !important;
 }
+
+.show-password{
+    border-width: 0px;
+    background-color: #F2F2F2;
+}
+
+.show-password:active{
+    border-width: 0px !important;
+    box-shadow: 0px 0px 0px !important;
+}
+
+.show-password:focus{
+    border-width: 0px !important;
+    box-shadow: 0px 0px 0px !important;
+}
+
