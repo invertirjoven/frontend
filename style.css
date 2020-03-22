@@ -14,6 +14,7 @@ body{
 button.btn, input.btn, a.btn{
     /* Pill buttons */  
     border-radius: 100px;
+    transition: all 0.3s ease !important;
 }
 
 button.btn-primary, input.btn-primary, a.btn-primary{
@@ -143,5 +144,10 @@ a.text-primary:active{
 .show-password:focus{
     border-width: 0px !important;
     box-shadow: 0px 0px 0px !important;
+}
+
+.lift:hover{
+    box-shadow: 0px 3px 5px #bbb;
+    transform: translateY(-3px);
 }
 
