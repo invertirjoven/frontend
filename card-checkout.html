@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invertir Joven</title>
+    <!-- Custom CSS style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome 5 -->
+    <script src="https://kit.fontawesome.com/6e1d9c181e.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-3 bg-white fixed-top">
+        <div class="container mx-auto mt-3" style="max-width:1000px">
+
+            <!-- Company logo-->
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt="" height="70">
+            </a>
+
+            <!-- Custom toggler -->
+            <button class="navbar-toggler my-3" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                style="height: 22px; width: 42px; border-color: white; background: url(https://manos-web.s3-sa-east-1.amazonaws.com/icons/toggler.svg) no-repeat; background-size: cover; border-radius: 0;">
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item active my-auto">
+                        <a class="nav-link text-secondary mx-3" href="index.html">
+                            <h5>Inicio</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-secondary mx-3" href="servicios.html">
+                            <h5>Cursos</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a href="login.html" class="mx-3 btn btn-lg btn-outline-primary w-100"
+                            style="min-width: 175px; max-width: 200px;">
+                            Mi cuenta
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="w-100">
+        <div class="row w-100 mx-auto" style="max-width: 1000px; margin-top: 110px;">
+
+            <div class="col-12 col-md-5" style="background-color: #333333;">
+                <div class="container p-0 m-0">
+                    <a href="text-white" class="mt-4 p-0">Regresar</a>
+                </div>
+                <h4 class="text-light mt-4">Curso de Introducción a las Finanzas Personales</h4>
+            </div>
+
+            <div class="col-12 col-md-7">
+
+                <h3 class="text-center text-dark text-bold mt-4">Pago con tarjeta</h3>
+
+                <!-- Card Checkout Form -->
+                <form action="" class="mx-auto mt-4" style="max-width: 450px;">
+
+                    <!-- Email input -->
+                    <div class="form-group">
+                        <label class="text-dark" for="email">Correo</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <!-- Card Number -->
+                    <div class="form-group mt-4">
+                        <label class="text-dark" for="card_number">Número de tarjeta</label>
+
+                        <!-- Popover -->
+                        <button type="button" data-container="body" data-toggle="popover" data-placement="top"
+                            data-content="Todas las transacciones son encriptadas y seguras."
+                            style="border-width: 0px; background-color: white;">
+                            <i class="fas fa-lock text-dark"></i>
+                        </button>
+
+                        <input type="number" class="form-control" id="card_number">
+
+                    </div>
+
+                    <!-- Year and month -->
+                    <div class="form-group mt-4">
+                        <label class="text-dark" for="password">Fecha de vencimiento</label>
+                        <div class="row">
+                            <!-- Month -->
+                            <div class="col-6">
+                                <select class="form-control" id="month">
+                                    <option value="" disabled selected>Mes</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+                            <!-- Year -->
+                            <div class="col-6">
+                                <select class="form-control" id="year">
+                                    <option value="" disabled selected>Año</option>
+                                    <!-- Options require manual update -->
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                    <option>32</option>
+                                    <option>33</option>
+                                    <option>34</option>
+                                    <option>35</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CCV -->
+                    <div class="form-group mt-4">
+                        <label class="text-dark" for="password">Código de seguridad</label>
+
+                        <!-- Popover -->
+                        <button type="button" data-container="body" data-toggle="popover" data-placement="top"
+                            data-content="El código de seguridad, o CCV, se refiere a los 3 o 4 números en la parte posterior o frontal de tu tarjeta."
+                            style="border-width: 0px; background-color: white;">
+                            <i class="fas fa-question-circle text-dark"></i>
+                        </button>
+
+                        <!-- CCV input-->
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="number" class="form-control" id="ccv" maxlength="4"
+                                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                            </div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                    </div>
+
+                    <!-- Submit form button-->
+                    <div class="mx-auto text-center mt-4">
+                        <button type="submit" class="btn btn-lg btn-primary w-75 lift">
+                            Pagar $19.99
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Components -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Initialize popovers -->
+    <script>
+        $("[data-toggle=popover]").popover();
+    </script>
+
+</body>
+
+</html>
