@@ -33,18 +33,18 @@ button.btn:hover{
     text-decoration: none !important;
 }
 
-button.btn-primary:hover{
+button.btn-primary:hover, a.btn-primary:hover{
     background-color: #FA5E10;
     border-color: #FA5E10;
 }
 
-button.btn-primary:active{
+button.btn-primary:active, a.btn-primary:hover{
     background-color: #F55809 !important;
     border-color: #F55809 !important;
     box-shadow: 0px 2px 1px #bbb !important;
 }
 
-button.btn-primary:focus{
+button.btn-primary:focus, a.btn-primary:hover{
     background-color: #EB5306 !important;
     border-color: #EB5306 !important;
     box-shadow: 0px 2px 1px #bbb !important;
@@ -190,3 +190,28 @@ a.text-white:hover, i.text-white:hover{
 p{
     line-height: 25px;
 }
+
+div.bg-primary{
+    background-color: #FF6619 !important;
+}
+
+div.chapter{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 20%);
+}
+
+div.chapter-bottom{
+    background-color: #F2F2F2;
+}
+
+button.btn-link{
+    color: #4D4D4D !important;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 20%);
+}
+
+.link-lift:hover{
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 25%);
+    transform: translateY(-2px);
+}
+
