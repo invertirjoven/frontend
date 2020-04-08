@@ -82,7 +82,7 @@ button.btn-outline-primary:active, input.btn-outline-primary:active, a.btn-outli
     box-shadow: 0px 2px 1px #bbb !important;
 }
 
-h3.text-dark, label.text-dark, strong.text-dark{
+h3.text-dark, label.text-dark, strong.text-dark, td.text-dark{
     color: #4D4D4D !important;
 }
 

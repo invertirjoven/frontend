@@ -59,7 +59,7 @@
     </nav>
 
     <!-- Main section -->
-    <section class="mx-auto w-100 px-3 pt-3 pb-0 bg-light">
+    <section class="mx-auto w-100 pt-3 pb-0 bg-light">
         <div class="row mx-auto my-0 pt-0" style="max-width: 1000px;">
             <div class="col-12 col-sm-5 col-md-4 p-0"
                 style="background-color: #333333;  min-height: 100vh; box-shadow: -5px 0px 10px rgba(0, 0, 0, 33%)">
@@ -90,25 +90,49 @@
                 style="background-color: white; box-shadow: 5px 0px 10px rgba(0, 0, 0, 25%); padding-top:100px">
 
                 <h3 class="text-center text-dark mt-4">Mi perfil</h3>
-                <div class="container w-100 mx-auto px-4" style="max-width: 550px;">
-                    <table class="table w-100 text-dark text-medium">
-                        <tr style="border-top: 0px;">
-                            <td class="text-secondary">Nombre</td>
-                            <td>Paolo</td>
+                <div class="container w-100 mx-auto px-3" style="max-width: 550px;">
+
+                    <!-- Table for md screens and larger -->
+                    <table class="table w-100 text-medium mt-3">
+                        <tr>
+                            <td class="text-secondary" style="border-top: 0px;">Nombre</td>
+                            <td class="text-dark" style="border-top: 0px;">Paolo</td>
                         </tr>
                         <tr>
                             <td class="text-secondary">Apellidos</td>
-                            <td>Bejarano</td>
+                            <td class="text-dark">Bejarano</td>
                         </tr>
                         <tr>
                             <td class="text-secondary">País</td>
-                            <td>Perú</td>
+                            <td class="text-dark">Perú</td>
                         </tr>
                         <tr>
                             <td class="text-secondary">Correo</td>
-                            <td>paolobejarano@hotmail.com</td>
+                            <td class="text-dark">paolobejarano@hotmail.com</td>
                         </tr>
                     </table>
+
+                    <!-- Table for xs and sm screens -->
+                    <!--
+                    <table class="table text-medium mt-3 mx-auto table-responsive d-none d-sm-block">
+                        <tr>
+                            <td class="text-secondary" style="border-top: 0px;">Nombre</td>
+                            <td class="text-dark" style="border-top: 0px;">Paolo</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">Apellidos</td>
+                            <td class="text-dark">Bejarano</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">País</td>
+                            <td class="text-dark">Perú</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">Correo</td>
+                            <td class="text-dark">paolobejarano@hotmail.com</td>
+                        </tr>
+                    </table>-->
+
                     <div class="container my-4 w-100 text-center">
                         <a href="profile-edit.html" class="btn btn-lg btn-outline-primary lift w-50"
                             style="max-width: 200px; max-width: 250px;">Editar
