@@ -20,13 +20,14 @@ button.btn, input.btn, a.btn{
 button.btn-primary, input.btn-primary, a.btn-primary{
     color: #ffffff;
     background-color:#FF6619;
-    border-width: 3px;
     border-color: #FF6619;
     font-weight: bold;
 }
 
 button.btn-lg, input.btn-lg, a.btn-lg{
     box-shadow: 0px 3px 5px #bbb;
+    font-weight: bold;
+    border-width: 3px;
 }
 
 button.btn:hover{
@@ -85,11 +86,11 @@ h3.text-dark, label.text-dark, strong.text-dark{
     color: #4D4D4D !important;
 }
 
-h3.text-light, h4.text-light, h5.text-light, label.text-light, strong.text-light{
+h3.text-light, h4.text-light, h5.text-light, label.text-light, strong.text-light, i.text-light{
     color: #BCBCBC !important;
 }
 
-h3.text-white, h4.text-white, h5.text-white, label.text-white, strong.text-white{
+h3.text-white, h4.text-white, h5.text-white, label.text-white, strong.text-white, i.text-white{
     color: #F2F2F2 !important;
 }
 
@@ -176,7 +177,7 @@ a.text-primary:active{
 }
 
 .text-medium{
-    font-weight: medium;
+    font-weight: 600;
 }
 
 a.text-white{
@@ -215,3 +216,31 @@ button.btn-link{
     transform: translateY(-2px);
 }
 
+ul.list-group{
+    box-shadow: 0px -1px 0px #707070;
+    margin-bottom: 1px;
+}
+
+a.list-group-item-action{
+    border-width: 0px 0px 0px 10px;
+    box-shadow: 0px 1px 0px #707070;
+    margin-bottom: 2px;
+}
+
+a.list-group-item-action:hover{
+    border-color: #FF7733;
+    color: #BCBCBC;
+}
+
+a.list-group-item-action.active{
+    border-color: #FF7733;
+    border-top: 0px;
+    color: #F2F2F2;
+}
+
+a.list-group-item{
+    background-color: #333333 !important;
+    border-color: #333333;
+    color: #BCBCBC;
+    font-weight: 600;
+}
