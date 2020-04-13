@@ -29,6 +29,32 @@
 
 <body>
 
+    <!-- Hide shadow effect -->
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+
+                // hide .progress first
+                $(".progress").hide();
+
+                // fade in .progress
+                $(function () {
+                    $(window).scroll(function () {
+
+                        // set distance user needs to scroll before we start fadeIn
+                        if ($(this).scrollTop() > 50) {
+                            $('.progress').fadeIn();
+                        }
+                        else {
+                            $('.progress').fadeOut();
+                        }
+                    });
+                });
+
+            });
+        }(jQuery));  
+    </script>
+
     <!-- Navbar and progress bar container -->
     <div class="container fixed-top mx-0 px-0" style="width: 100%; max-width: 2000px;">
 
