@@ -287,3 +287,22 @@ div.dropdown-divider{
     box-shadow: -4px 0px #BCBCBC;
     border-color: #BCBCBC;
 }
+
+div.footer-icon{
+    background-color: #666666; height: 50px; width: 50px; border-radius: 50%; display:flex; align-items:center; justify-content: center;
+    font-size: 25px;
+    transition: all .2s ease-in-out;
+}
+
+div.footer-icon:hover{
+    transform: scale(1.15);
+}
+
+a.footer-link{
+    color: #F2F2F2;
+}
+
+a.footer-link:hover{
+    color: #FF9966 !important;
+    text-decoration: none !important;
+}
