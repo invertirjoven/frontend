@@ -82,7 +82,7 @@
     <!-- Main section -->
     <section class="mx-auto w-100 px-3 pt-3 pb-0 bg-light">
         <div class="row mx-auto my-0 pt-0" style="max-width: 1000px;">
-            <div class="col-12 col-sm-5 col-md-4 p-0"
+            <div class="col-5 col-md-4 p-0 d-none d-sm-block"
                 style="background-color: #333333;  min-height: 100vh; box-shadow: -5px 0px 10px rgba(0, 0, 0, 33%)">
                 <div class="container w-100 mx-auto text-center pt-4" style="margin-top:100px">
                     <a href="profile.html">
@@ -90,12 +90,12 @@
                     </a>
                 </div>
                 <ul class="list-group mt-4">
-                    <a class="list-group-item list-group-item-action" href="profile.html">
+                    <a class="list-group-item list-group-item-action active" href="profile.html">
                         <i class="fas fa-house-user mr-2"></i>
                         Mi perfil
                     </a>
 
-                    <a class="list-group-item list-group-item-action active" href="profile-edit.html">
+                    <a class="list-group-item list-group-item-action" href="profile-edit.html">
                         <i class="fas fa-user-edit mr-2"></i>
                         Editar mi perfil
                     </a>
@@ -107,8 +107,39 @@
 
                 </ul>
             </div>
+
+            <!-- Dropdown Menu for xs and sm screens -->
+            <div class="col-12 d-block d-sm-none px-4" style="background-color: #333333;">
+                <div class="dropdown mb-4" style="margin-top:111px">
+                    <button class="dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-edit mr-2 ml-2"></i>
+                        Editar mi perfil
+                    </button>
+                    <div class="dropdown-menu w-100 pl-1 pt-1 pb-1" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-dark py-2" href="profile.html">
+                            <i class="fas fa-house-user mr-2"></i>
+                            Mi perfil
+                        </a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item text-dark py-2 active" href="profile-edit.html">
+                            <i class="fas fa-user-edit mr-2"></i>
+                            Editar mi perfil
+                        </a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item text-dark py-2" href="password-edit.html">
+                            <i class="fas fa-user-lock mr-2"></i>
+                            Cambiar mi contraseña
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="col-12 col-sm-7 col-md-8"
-                style="background-color: white; box-shadow: 5px 0px 10px rgba(0, 0, 0, 25%); padding-top:100px">
+                style="background-color: white; box-shadow: 5px 0px 10px rgba(0, 0, 0, 25%);">
+
+                <div class="container d-none d-sm-block" style="height:100px;"></div>
 
                 <h3 class="text-center text-dark mt-4">Editar mi perfil</h3>
 

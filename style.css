@@ -34,18 +34,18 @@ button.btn:hover{
     text-decoration: none !important;
 }
 
-button.btn-primary:hover, a.btn-primary:hover{
+button.btn-primary:hover, a.btn-primary:hover, input.btn-primary:hover{
     background-color: #FA5E10;
     border-color: #FA5E10;
 }
 
-button.btn-primary:active, a.btn-primary:hover{
+button.btn-primary:active, a.btn-primary:active, input.btn-primary:active{
     background-color: #F55809 !important;
     border-color: #F55809 !important;
     box-shadow: 0px 2px 1px #bbb !important;
 }
 
-button.btn-primary:focus, a.btn-primary:hover{
+button.btn-primary:focus, a.btn-primary:focus, input.btn-primary:focus{
     background-color: #EB5306 !important;
     border-color: #EB5306 !important;
     box-shadow: 0px 2px 1px #bbb !important;
@@ -82,7 +82,7 @@ button.btn-outline-primary:active, input.btn-outline-primary:active, a.btn-outli
     box-shadow: 0px 2px 1px #bbb !important;
 }
 
-h3.text-dark, label.text-dark, strong.text-dark, td.text-dark{
+h3.text-dark, label.text-dark, strong.text-dark, td.text-dark, h4.text-dark, h5.text-dark, h6.text-dark{
     color: #4D4D4D !important;
 }
 
@@ -144,12 +144,16 @@ select.form-control:focus{
     background-color: #F2F2F2;
 }
 
-a.text-primary{
+a.text-primary, i.text-primary{
     color: #FF6619 !important;
 }
 
 a.text-primary:active{
     color: #FF7733 !important;
+}
+
+a.text-dark{
+    color: #4D4D4D !important;
 }
 
 .show-password{
@@ -194,6 +198,10 @@ p{
 
 div.bg-primary{
     background-color: #FF6619 !important;
+}
+
+div.bg-light{
+    background-color: #BCBCBC !important;
 }
 
 div.chapter{
@@ -243,4 +251,39 @@ a.list-group-item{
     border-color: #333333;
     color: #BCBCBC;
     font-weight: 600;
+}
+
+button.dropdown-toggle{
+    border-radius: 5px;
+    border-width: 0px;
+    height: 35px;
+    font-weight: 600;
+    text-align: left;
+    color: #4D4D4D !important;
+}
+
+button.dropdown-toggle:active{
+    box-shadow: none;
+    border-radius: 0px;
+    border-style: none;
+}
+
+a.dropdown-item{
+    font-size: 17px;
+}
+
+a.dropdown-item.active, a.dropdown-item:hover{
+    box-shadow: -4px 0px  #FF7733;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+
+div.dropdown-menu{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 25%);
+    border-width: 0px;
+}
+
+div.dropdown-divider{
+    box-shadow: -4px 0px #BCBCBC;
+    border-color: #BCBCBC;
 }
