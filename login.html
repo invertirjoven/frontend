@@ -30,25 +30,49 @@
 
 <body>
     <div class="row">
-        <div class="col-md-5 col-lg-6 bg-left d-none d-md-block">
+
+        <!-- For lg or larger screens-->
+        <div class="col-md-5 col-lg-6 bg-left d-none d-lg-block">
             <div class="row h-100" style="transform: skew(4deg);">
-                <div class="col-2"></div>
-                <div class="col-md-4 col-lg-5 my-auto pr-0">
+                <div class="col-3"></div>
+                <div class="col-4 my-auto p-0">
                     <a href="index.html">
                         <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
-                            style="height: 80px; position: absolute; top: -35vh;" class="mt-2 mb-2">
+                            style="height: 80px; position: absolute; top: -35vh;" class="mt-2 mb-2 zoom">
                     </a>
-                    <h3 class="text-white" style="line-height: 45px;">Ingresa a tu cuenta y comienza a aprender</h3>
+                    <h2 class="text-white ml-0 pl-0" style="line-height: 45px;">Ingresa a tu cuenta y comienza a
+                        aprender
+                    </h2>
                 </div>
                 <!-- Illustration -->
-                <div class="col-md-6 col-lg-5 my-auto p-0">
+                <div class="col-5 my-auto p-0">
                     <object data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/login_person.svg"
                         type="image/svg+xml" class="w-100" style="right:-25%; position:relative;"></object>
                 </div>
             </div>
         </div>
 
+        <!-- For md screens -->
+        <div class="col-md-5 col-lg-6 bg-left d-none d-md-block d-lg-none">
+            <div class="row h-100" style="transform: skew(4deg);">
+                <div class="col-2"></div>
+                <div class="col-4 my-auto">
+                    <a href="index.html">
+                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
+                            style="height: 80px; position: absolute; top: -30vh;" class="mt-2 mb-2">
+                    </a>
+                    <h3 class="text-white" style="line-height: 40px;">Ingresa a tu cuenta y comienza a aprender
+                    </h3>
+                </div>
+                <!-- Illustration -->
+                <div class="col-6 my-auto p-0">
+                    <object data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/login_person.svg"
+                        type="image/svg+xml" class="w-100" style="right:-25%; position:relative;"></object>
+                </div>
+            </div>
+        </div>
 
+        <!-- Form Container -->
         <div class="col-12 col-md-7 col-lg-6 my-auto">
             <!-- Header only on mobile-->
             <header class="text-center d-block d-md-none">
