@@ -5,6 +5,10 @@
     letter-spacing: 0.5px;
 }
 
+h2, h3{
+    line-height: 1.5 !important;
+}
+
 body{
     /* Set padding left and right for iPhone X */
     padding-left: constant(safe-area-inset-left);
@@ -24,8 +28,15 @@ button.btn-primary, input.btn-primary, a.btn-primary{
     font-weight: bold;
 }
 
+button.btn-dark-primary, input.btn-dark-primary, a.btn-dark-primary{
+    color: #ffffff;
+    background-color:#FF742F;
+    border-color: #FF742F;
+    font-weight: bold;
+}
+
 button.btn-lg, input.btn-lg, a.btn-lg{
-    box-shadow: 0px 3px 5px #bbb;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 25%);
     font-weight: bold;
     border-width: 3px;
 }
@@ -49,6 +60,23 @@ button.btn-primary:focus, a.btn-primary:focus, input.btn-primary:focus{
     background-color: #EB5306 !important;
     border-color: #EB5306 !important;
     box-shadow: 0px 2px 1px #bbb !important;
+}
+
+button.btn-dark-primary:hover, a.btn-dark-primary:hover, input.btn-dark-primary:hover{
+    background-color: #FF7D3C;
+    border-color: #FF7D3C;
+    color: white;
+}
+
+button.btn-dark-primary:active, a.btn-dark-primary:active, input.btn-dark-primary:active{
+    background-color: #FF8245 !important;
+    border-color: #FF8245 !important;
+    color: white;
+}
+
+button.btn-dark-primary:focus, a.btn-dark-primary:focus, input.btn-dark-primary:focus{
+    background-color: #FF8245 !important;
+    border-color: #FF8245 !important;
 }
 
 button.btn-outline-primary, input.btn-outline-primary, a.btn-outline-primary{
@@ -172,7 +200,7 @@ a.text-dark{
 }
 
 .lift:hover{
-    box-shadow: 0px 3px 5px #bbb;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 35%);
     transform: translateY(-3px);
 }
 
@@ -307,3 +335,10 @@ a.footer-link:hover{
     color: #FF9966 !important;
     text-decoration: none !important;
 }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
