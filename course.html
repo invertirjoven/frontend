@@ -79,23 +79,39 @@
         </div>
     </div>
 
-    <section class="w-100" style="background-color: #333333; margin-top: 100px;">
-        <div class="container w-100">
-            <img class="w-100 my-2 d-none d-sm-block"
-                src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/course-background-xl.svg"
+    <section class="w-100 px-3" style="background-color: #333333; padding-top: 111px;">
+        <div class="w-100 mx-auto" style="max-width: 1000px; position: relative;">
+            <img class="w-100 my-2 d-none d-md-block"
+                src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/course-background-lg.svg"
+                alt="">
+            <img class="w-100 my-2 d-none d-sm-block d-md-none"
+                src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/course-background-sm.svg"
                 alt="">
             <img class="w-100 my-2 d-block d-sm-none"
                 src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/course-background-xs.svg"
                 alt="">
-            <!--<div class="container text-center" style="position: absolute; top: 42vh;">
-                <h2 style="color: white;">Introducción a las Finanzas Personales</h2>
-                <a href="card-checkout.html" class="btn btn-lg btn-primary w-25 mt-3 lift"
-                    style="box-shadow: 0px 0px 0px;">
-                    Comenzar
-                </a>
-            </div>-->
+            <div class="centered text-center d-none d-md-block">
+                <h2 class="text-white">Introducción a las Finanzas Personales</h2>
+                <button class="btn btn-lg btn-dark-primary mt-3 w-100 lift" style="max-width: 300px;">
+                    Empezar curso
+                </button>
+            </div>
+            <div class="centered text-center d-none d-sm-block d-md-none">
+                <h3 class="text-white">Introducción a las Finanzas Personales</h3>
+                <button class="btn btn-lg btn-dark-primary mt-3 w-100 lift" style="max-width: 275px;">
+                    Empezar curso
+                </button>
+            </div>
+            <div class="centered text-center d-block d-sm-none">
+                <h3 class="text-white">Introducción a las Finanzas Personales</h3>
+                <button class="btn btn-dark-primary mt-2 w-100 lift" style="max-width: 250px;">
+                    Empezar curso
+                </button>
+            </div>
         </div>
     </section>
+
+
 
     <!-- Course Description Section -->
     <section class="w-100 px-4">
@@ -107,7 +123,7 @@
             <h3>Acerca de este curso</h3>
             <div class="row mt-3">
                 <div class="col-12 col-md-5 col-lg-6 my-auto">
-                    <p class="text-justify mb-0">Tomar decisiones económicas responsables e informadas es primordial. En
+                    <p class="text-justify mb-3">Tomar decisiones económicas responsables e informadas es primordial. En
                         este
                         curso conocerás las
                         herramientas para poder tener el control de tus finanzas y tener una mejor planeación y
@@ -116,7 +132,7 @@
                 </div>
                 <div class="col-12 col-md-7 col-lg-6 my-auto">
                     <div class="row w-100">
-                        <div class="col-4">
+                        <div class="col-6 col-sm-4">
                             <h5 class="text-secondary">Inversión</h5>
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
@@ -129,25 +145,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6 col-sm-4">
                             <h5 class="text-secondary">Duración</h5>
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center">
-                                    <i class="fas fa-dollar-sign text-primary"></i>
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/chronometer.svg"
+                                        type="image/svg+xml" style="height: 20px;"></object>
                                 </div>
                                 <!-- Text -->
                                 <div class="align-self-center">
-                                    <h6 class="text-dark pl-2 my-0">19.99</h6>
+                                    <h6 class="text-dark pl-2 my-0">Aprox. 6 horas</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6 col-sm-4">
                             <h5 class="text-secondary">Nivel</h5>
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center">
-                                    <i class="fas fa-dollar-sign text-primary"></i>
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/beginer.svg"
+                                        type="image/svg+xml" style="height: 20px;"></object>
                                 </div>
                                 <!-- Text -->
                                 <div class="align-self-center">
@@ -194,6 +214,7 @@
             </div>
         </div>
     </section>
+
     <!-- Course Content Section -->
     <section class="w-100 px-4">
         <div class="container mx-auto p-0 text-dark" style="max-width: 1000px;">
@@ -213,13 +234,13 @@
                 </div>
                 <div class="container chapter-bottom">
                     <div class="row py-4">
-                        <div class="col-7">
+                        <div class="col-12 col-md-7">
                             <button class="btn btn-link link-lift">
                                 <i class="fas fa-angle-down mr-1" style="font-size:30px;"></i>
                                 Ver detalles del capítulo
                             </button>
                         </div>
-                        <div class="col-5 text-center">
+                        <div class="col-12 col-md-5 text-center">
                             <a class="btn btn-primary w-75 lift" style="min-width: 200px; max-width: 250px;"
                                 href="#">Continuar capítulo</a>
                         </div>
