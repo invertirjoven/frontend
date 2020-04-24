@@ -44,7 +44,7 @@
             $(document).ready(function () {
 
                 // hide .progress first
-                $(".progress").hide();
+                $("#progress-hide").hide();
 
                 // fade in .progress
                 $(function () {
@@ -52,10 +52,10 @@
 
                         // set distance user needs to scroll before we start fadeIn
                         if ($(this).scrollTop() > 50) {
-                            $('.progress').fadeIn();
+                            $('#progress-hide').fadeIn();
                         }
                         else {
-                            $('.progress').fadeOut();
+                            $('#progress-hide').fadeOut();
                         }
                     });
                 });
@@ -107,7 +107,7 @@
         </nav>
 
         <!-- Shadow effect for navbar on scroll down -->
-        <div class="progress w-100" style="height:2px; box-shadow: 0px 4px 6px #999; width:100%;">
+        <div class="progress w-100" style="height:2px; box-shadow: 0px 4px 6px #999; width:100%;" id="progress-hide">
             <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#fff;" aria-valuenow="100"
                 aria-valuemin="0" aria-valuemax="100">
             </div>
