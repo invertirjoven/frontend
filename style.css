@@ -252,29 +252,29 @@ button.btn-link{
     transform: translateY(-2px);
 }
 
-ul.list-group{
+ul.list-group.side-bar{
     box-shadow: 0px -1px 0px #707070;
     margin-bottom: 1px;
 }
 
-a.list-group-item-action{
+a.list-group-item-action.side-bar{
     border-width: 0px 0px 0px 10px;
     box-shadow: 0px 1px 0px #707070;
     margin-bottom: 2px;
 }
 
-a.list-group-item-action:hover{
+a.list-group-item-action.side-bar:hover{
     border-color: #FF7733;
     color: #BCBCBC;
 }
 
-a.list-group-item-action.active{
+a.list-group-item-action.active.side-bar{
     border-color: #FF7733;
     border-top: 0px;
     color: #F2F2F2;
 }
 
-a.list-group-item{
+a.list-group-item.side-bar{
     background-color: #333333 !important;
     border-color: #333333;
     color: #BCBCBC;
