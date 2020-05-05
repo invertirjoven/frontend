@@ -81,9 +81,13 @@
 
     <section class="w-100 px-2" style="background-color: #333333; padding-top: 111px;">
         <div class="w-100 mx-auto" style="max-width: 1000px; position: relative;">
+
+            <!-- Background illustration for md and larger screens -->
             <object class="w-100 my-2 d-none d-md-block"
                 data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/course-background-lg.svg"
                 alt="" type="image/svg+xml"></object>
+
+            <!-- Background illustration for md and larger screens -->
             <object class="w-100 my-2 d-none d-sm-block d-md-none"
                 data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/course-background-sm.svg"
                 alt="" type="image/svg+xml"></object>
@@ -233,9 +237,11 @@
                     aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <h3>¿Qué aprenderás?</h3>
+
+            <!-- Chapter -->
             <div class="chapter mt-4 w-100 p-0">
                 <div class="row px-4 pt-4 pb-3">
-                    <div class="col-12 col-sm-9 my-auto">
+                    <div class="col-12 col-sm-7 my-auto">
                         <div class="d-flex w-100 p-0">
                             <!-- Icon -->
                             <div class="align-self-center">
@@ -243,17 +249,37 @@
                                     1
                                 </div>
                             </div>
-                            <!-- Text -->
-                            <div class="align-self-center">
+                            <!-- Chapter title for sm and larger -->
+                            <div class="align-self-center d-none d-sm-block">
                                 <h4 class="text-dark pl-3 my-0">
                                     Conceptos Básicos
                                     <span class="badge badge-primary">Gratis</span>
                                 </h4>
                             </div>
+                            <!-- Chapter title for xs -->
+                            <div class="align-self-center d-block d-sm-none">
+                                <h4 class="text-dark pl-3 my-0">
+                                    Conceptos Básicos
+                                </h4>
+                            </div>
+                            <!-- Free Chapter Badge for xs-->
+                            <div class="ml-auto my-auto d-block d-sm-none">
+                                <h4>
+                                    <span class="badge badge-primary">Gratis</span>
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3 text-right my-auto">
-                        <div class="progress my-3" style="height: 15px;">
+                    <!-- Percentage completed for sm and larger -->
+                    <div class="col-2 d-none d-sm-block my-auto pr-1 pt-2">
+                        <h5 class="text-secondary text-right pt-1 pr-2">0%</h5>
+                    </div>
+                    <!-- Percentage completed for xs -->
+                    <div class="col-3 d-block d-sm-none my-auto pt-2">
+                        <h5 class="text-secondary pt-1">100%</h5>
+                    </div>
+                    <div class="col-6 col-sm-3 text-center my-auto pt-2 pl-0">
+                        <div class="progress my-3 mx-auto" style="height: 15px;">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;"
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -267,7 +293,7 @@
                 </div>
                 <div class="collapse px-4" id="collapseExample">
                     <div class="list-group mb-4">
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -278,19 +304,18 @@
                                 <!-- Text -->
                                 <div class="align-self-center">
                                     <p class="text-medium text-dark pl-2 my-0">
-                                        ¿Por qué estudiar finanzas personales? I
+                                        ¿Por qué aprender finanzas personales? I
                                     </p>
                                 </div>
-                                <!-- Completion and XP -->
+                                <!-- Completion -->
                                 <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
+                                    <p class="text-medium text-secondary my-auto py-auto pl-2">
                                         <i class="fas fa-check"></i>
-                                        5 px
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -301,19 +326,18 @@
                                 <!-- Text -->
                                 <div class="align-self-center">
                                     <p class="text-medium text-dark pl-2 my-0">
-                                        ¿Por qué estudiar finanzas personales? II
+                                        ¿Por qué aprender finanzas personales? II
                                     </p>
                                 </div>
-                                <!-- Completion and XP -->
+                                <!-- Completion -->
                                 <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
+                                    <p class="text-medium text-secondary my-auto py-auto pl-2">
                                         <i class="fas fa-check"></i>
-                                        5 px
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -324,18 +348,12 @@
                                 <!-- Text -->
                                 <div class="align-self-center">
                                     <p class="text-medium text-dark pl-2 my-0">
-                                        Evalúa tu nivel de racionalidad al tomar decisiones I
-                                    </p>
-                                </div>
-                                <!-- Completion and XP -->
-                                <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
-                                        10 px
+                                        Conocimientos previos I
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -346,18 +364,12 @@
                                 <!-- Text -->
                                 <div class="align-self-center">
                                     <p class="text-medium text-dark pl-2 my-0">
-                                        Evalúa tu nivel de racionalidad al tomar decisiones II
-                                    </p>
-                                </div>
-                                <!-- Completion and XP -->
-                                <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
-                                        10 px
+                                        Conocimientos previos II
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -368,18 +380,12 @@
                                 <!-- Text -->
                                 <div class="align-self-center">
                                     <p class="text-medium text-dark pl-2 my-0">
-                                        Evalúa tu nivel de racionalidad al tomar decisiones III
-                                    </p>
-                                </div>
-                                <!-- Completion and XP -->
-                                <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
-                                        10 px
+                                        Conocimientos previos III
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -393,15 +399,9 @@
                                         Costo de oportunidad
                                     </p>
                                 </div>
-                                <!-- Completion and XP -->
-                                <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
-                                        5 px
-                                    </p>
-                                </div>
                             </div>
                         </a>
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -415,15 +415,9 @@
                                         Costo de oportunidad - Evaluación I
                                     </p>
                                 </div>
-                                <!-- Completion and XP -->
-                                <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
-                                        10 px
-                                    </p>
-                                </div>
                             </div>
                         </a>
-                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-1">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
                             <div class="d-flex w-100 p-0">
                                 <!-- Icon -->
                                 <div class="align-self-center pt-2">
@@ -437,10 +431,198 @@
                                         Costo de oportunidad - Evaluación II
                                     </p>
                                 </div>
-                                <!-- Completion and XP -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-100 chapter-bottom p-0">
+                    <div class="row py-4 px-4">
+                        <div class="col-12 col-sm-7 my-auto">
+                            <!-- Collapse button for sm and larger-->
+                            <a class="btn-link d-none d-sm-block" type="button" data-toggle="collapse"
+                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fas fa-angle-down mr-1"></i>
+                                Ver detalles del capítulo
+                            </a>
+                            <!-- Collapse button form xs -->
+                            <a class="btn-link text-center d-block d-sm-none mb-3" type="button" data-toggle="collapse"
+                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fas fa-angle-down mr-1"></i>
+                                Ver detalles del capítulo
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-5 text-center my-auto">
+                            <a class="btn btn-primary w-75 lift" style="min-width: 200px; max-width: 250px;"
+                                href="#">Continuar capítulo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter -->
+            <div class="chapter mt-4 w-100 p-0">
+                <div class="row px-4 pt-4 pb-3">
+                    <div class="col-12 my-auto">
+                        <div class="d-flex w-100 p-0">
+                            <!-- Icon -->
+                            <div class="align-self-center">
+                                <div class="container text-center px-0 number-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                            </div>
+                            <!-- Chapter title for sm and larger -->
+                            <div class="align-self-center d-none d-sm-block">
+                                <h4 class="text-dark pl-3 my-0">
+                                    Conceptos Básicos
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 px-4">
+                    <p class="text-justify">
+                        En este primer capítulo aprenderás sobre los conceptos básicos en finanzas personales que te
+                        servirán a lo largo del curso.
+                    </p>
+                </div>
+                <div class="collapse px-4" id="collapseExample2">
+                    <div class="list-group mb-4">
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/lecture-circle-primary.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        ¿Por qué aprender finanzas personales? I
+                                    </p>
+                                </div>
+                                <!-- Completion -->
                                 <div class="ml-auto my-auto">
-                                    <p class="text-medium text-secondary my-auto py-auto">
-                                        10 px
+                                    <p class="text-medium text-secondary my-auto py-auto pl-2">
+                                        <i class="fas fa-check"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/lecture-circle-primary.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        ¿Por qué aprender finanzas personales? II
+                                    </p>
+                                </div>
+                                <!-- Completion -->
+                                <div class="ml-auto my-auto">
+                                    <p class="text-medium text-secondary my-auto py-auto pl-2">
+                                        <i class="fas fa-check"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/quiz-circle-light.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        Conocimientos previos I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/quiz-circle-light.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        Conocimientos previos II
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/quiz-circle-light.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        Conocimientos previos III
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/lecture-circle-light.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        Costo de oportunidad
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/quiz-circle-light.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        Costo de oportunidad - Evaluación I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lecture1.html" class="list-group-item list-group-item-action px-2 py-2">
+                            <div class="d-flex w-100 p-0">
+                                <!-- Icon -->
+                                <div class="align-self-center pt-2">
+                                    <object
+                                        data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/icons/quiz-circle-light.svg"
+                                        type="image/svg+xml" style="height: 30px;"></object>
+                                </div>
+                                <!-- Text -->
+                                <div class="align-self-center">
+                                    <p class="text-medium text-dark pl-2 my-0">
+                                        Costo de oportunidad - Evaluación II
                                     </p>
                                 </div>
                             </div>
@@ -448,21 +630,30 @@
                     </div>
                 </div>
                 <div class="w-100 chapter-bottom p-0">
-                    <div class="row py-4 px-3">
-                        <div class="col-12 col-sm-6 col-md-7 my-auto">
-                            <button class="btn btn-link" type="button" data-toggle="collapse"
-                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <i class="fas fa-angle-down mr-1" style="font-size:30px;"></i>
+                    <div class="row py-4 px-4">
+                        <div class="col-12 col-sm-7 my-auto">
+                            <!-- Collapse button for sm and larger-->
+                            <a class="btn-link d-none d-sm-block" type="button" data-toggle="collapse"
+                                data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fas fa-angle-down mr-1"></i>
                                 Ver detalles del capítulo
-                            </button>
+                            </a>
+                            <!-- Collapse button form xs -->
+                            <a class="btn-link text-center d-block d-sm-none mb-3" type="button" data-toggle="collapse"
+                                data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fas fa-angle-down mr-1"></i>
+                                Ver detalles del capítulo
+                            </a>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-5 text-center my-auto">
+                        <div class="col-12 col-sm-5 text-center my-auto">
                             <a class="btn btn-primary w-75 lift" style="min-width: 200px; max-width: 250px;"
-                                href="#">Continuar capítulo</a>
+                                href="#">Desbloquear</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </section>
 
