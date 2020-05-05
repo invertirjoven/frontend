@@ -19,6 +19,7 @@ button.btn, input.btn, a.btn{
     /* Pill buttons */  
     border-radius: 100px;
     transition: all 0.3s ease !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 20%);
 }
 
 button.btn-primary, input.btn-primary, a.btn-primary{
@@ -36,7 +37,7 @@ button.btn-dark-primary, input.btn-dark-primary, a.btn-dark-primary{
 }
 
 button.btn-lg, input.btn-lg, a.btn-lg{
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 25%);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 25%) !important;
     font-weight: bold;
     border-width: 3px;
 }
@@ -200,7 +201,7 @@ a.text-dark{
 }
 
 .lift:hover{
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 35%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 25%);
     transform: translateY(-3px);
 }
 
@@ -240,7 +241,7 @@ div.chapter-bottom{
     background-color: #F2F2F2;
 }
 
-button.btn-link{
+button.btn-link, a.btn-link{
     color: #4D4D4D !important;
     font-size: 20px;
     font-weight: 600;
@@ -368,4 +369,11 @@ a.footer-link:hover{
 
 a.list-group-item{
     border: 0px !important;
+}
+
+div.tooltip-inner{
+    color: #4D4D4D;
+    background-color: white;
+    border: 1px solid #4D4D4D;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
 }
