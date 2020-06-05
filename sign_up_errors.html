@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invertir Joven</title>
+    <!-- Custom CSS style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/favicon/safari-pinned-tab.svg"
+        color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body style="overflow-x: hidden;">
+    <div class="row">
+
+        <!-- For lg or larger screens-->
+        <div class="col-md-5 col-lg-6 bg-left d-none d-lg-block">
+            <div class="row h-100" style="transform: skew(4deg);">
+                <div class="col-3"></div>
+                <div class="col-4 my-auto p-0">
+                    <a href="index.html">
+                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
+                            style="height: 80px; position: absolute; top: -35vh;" class="mt-2 mb-2 zoom">
+                    </a>
+                    <h2 class="text-white ml-0 pl-0" style="line-height: 45px;">
+                        Crea tu cuenta y empieza a aprender gratis.
+                    </h2>
+                </div>
+                <!-- Illustration -->
+                <div class="col-5 my-auto p-0">
+                    <object data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/login_person.svg"
+                        type="image/svg+xml" class="w-100" style="right:-25%; position:relative;"></object>
+                </div>
+            </div>
+        </div>
+
+        <!-- For md screens -->
+        <div class="col-md-5 col-lg-6 bg-left d-none d-md-block d-lg-none">
+            <div class="row h-100" style="transform: skew(4deg);">
+                <div class="col-2"></div>
+                <div class="col-4 my-auto">
+                    <a href="index.html">
+                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
+                            style="height: 80px; position: absolute; top: -30vh;" class="mt-2 mb-2">
+                    </a>
+                    <h3 class="text-white" style="line-height: 40px;">
+                        Crea tu cuenta y empieza a aprender gratis.
+                    </h3>
+                </div>
+                <!-- Illustration -->
+                <div class="col-6 my-auto p-0">
+                    <object data="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/illustrations/login_person.svg"
+                        type="image/svg+xml" class="w-100" style="right:-25%; position:relative;"></object>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Container -->
+        <div class="col-12 col-md-7 col-lg-6 my-auto">
+            <!-- Header only on mobile-->
+            <header class="text-center d-block d-md-none">
+                <a href="index.html">
+                    <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
+                        style="height: 80px;" class="mt-2 mb-2">
+                </a>
+
+                <div class="progress mb-4" style="height:3px; box-shadow: 0px 2px 5px #bbb;">
+                    <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#C9C9C9;"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+            </header>
+            <h3 class="text-center text-dark mt-3">Regístrate</h3>
+
+            <!-- Sign Up Form -->
+            <form class="mx-auto px-5 mt-3" style="max-width: 500px;">
+
+                <!-- First Name input -->
+                <div class="form-group">
+                    <label class="text-dark" for="first_name">¿Cómo te llamas?</label>
+                    <div class="field_with_errors">
+                        <input type="first_name" class="form-control" id="first_name" aria-describedby="first_name">
+                    </div>
+                </div>
+
+                <!-- Last Name input -->
+                <div class="form-group">
+                    <label class="text-dark" for="last_name">¿Cómo te apellidas</label>
+                    <div class="field_with_errors">
+                        <input type="last_name" class="form-control" id="last_name" aria-describedby="last_name">
+                    </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-group">
+                    <label class="text-dark" for="email">Correo</label>
+                    <div class="field_with_errors">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-group">
+                    <label class="text-dark" for="password">Contraseña</label>
+                    <div class="input-group">
+                        <div class="field_with_errors">
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="input-group-append">
+                            <button class="show-password" type="button" name="button" onclick="show_password()">
+                                <i class="fa fa-eye mx-2 text-dark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms and privacy -->
+                <div class="text-center mt-4">
+                    <small style="font-weight: 600;" class="text-secondary">
+                        Al hacer click en Registrarse, aceptas los <a href="" target="_blank"
+                            class="text-primary">Términos de uso</a> y <a href="" target="_blank"
+                            class="text-primary">Política de privacidad</a> de
+                        Invertir Joven.
+                    </small>
+                </div>
+
+                <!-- Submit form button-->
+                <div class="mx-auto text-center mt-3 mb-4">
+                    <a href="course.html" class="btn btn-lg btn-primary w-75 lift">
+                        Registrarse
+                    </a>
+                    <!--<button type="submit" class="btn btn-lg btn-primary w-75 lift">
+                        Registrarse
+                    </button>-->
+                </div>
+
+                <!-- Separador -->
+                <div class="progress" style="height:2px; box-shadow: 1px 1px 3px #999 ;">
+                    <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#C9C9C9;"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+
+                <!-- Enlace para registro -->
+                <h5 class="text-center mt-4">
+                    <strong class="text-dark">¿Ya te registraste?</strong>
+                </h5>
+
+                <a href="login.html" class="btn btn-lg btn-outline-primary mt-4 mb-4 btn-block w-75 mx-auto lift">
+                    Iniciar sesión
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function show_password() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+    </script>
+
+    <body>
