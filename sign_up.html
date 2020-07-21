@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-x: hidden;">
 
 <head>
     <meta charset="utf-8">
@@ -37,8 +37,8 @@
                 <div class="col-3"></div>
                 <div class="col-4 my-auto p-0">
                     <a href="index.html">
-                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
-                            style="height: 80px; position: absolute; top: -35vh;" class="mt-2 mb-2 zoom">
+                        <img src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/logos/black_logo.svg" alt=""
+                            style="height: 60px; position: absolute; top: -32vh;" class="mt-2 mb-2 zoom">
                     </a>
                     <h2 class="text-white ml-0 pl-0" style="line-height: 45px;">
                         Crea tu cuenta y empieza a aprender gratis.
@@ -58,8 +58,8 @@
                 <div class="col-2"></div>
                 <div class="col-4 my-auto">
                     <a href="index.html">
-                        <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
-                            style="height: 80px; position: absolute; top: -30vh;" class="mt-2 mb-2">
+                        <img src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/logos/black_logo.svg" alt=""
+                            style="height: 60px; position: absolute; top: -25vh;" class="mt-2 mb-2">
                     </a>
                     <h3 class="text-white" style="line-height: 40px;">
                         Crea tu cuenta y empieza a aprender gratis.
@@ -78,8 +78,8 @@
             <!-- Header only on mobile-->
             <header class="text-center d-block d-md-none">
                 <a href="index.html">
-                    <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt=""
-                        style="height: 80px;" class="mt-2 mb-2">
+                    <img src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/logos/black_logo.svg" alt=""
+                        style="height: 55px;" class="my-4">
                 </a>
 
                 <div class="progress mb-4" style="height:3px; box-shadow: 0px 2px 5px #bbb;">
@@ -93,16 +93,35 @@
             <!-- Sign Up Form -->
             <form class="mx-auto px-5 mt-3" style="max-width: 500px;">
 
-                <!-- First Name input -->
+                <!-- First Name and Last Name input -->
                 <div class="form-group">
                     <label class="text-dark" for="first_name">¿Cómo te llamas?</label>
-                    <input type="first_name" class="form-control" id="first_name" aria-describedby="first_name">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="first_name" class="form-control" id="first_name" aria-describedby="first_name"
+                                placeholder="Nombres">
+                        </div>
+                        <div class="col-6">
+                            <input type="last_name" class="form-control" id="last_name" aria-describedby="last_name"
+                                placeholder="Apellidos">
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Last Name input -->
+                <!-- Country input -->
                 <div class="form-group">
-                    <label class="text-dark" for="last_name">¿Cómo te apellidas</label>
-                    <input type="last_name" class="form-control" id="last_name" aria-describedby="last_name">
+                    <label class="text-dark" for="country">¿En qué país te encuentras?</label>
+                    <select class="form-control" id="country_id">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="México">México</option>
+                        <option value="Perú" selected>Perú</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
                 </div>
 
                 <!-- Email input -->
@@ -124,13 +143,13 @@
                     </div>
                 </div>
 
-                <!-- Terms and conditions -->
+                <!-- Terms and privacy -->
                 <div class="text-center mt-4">
-                    <small style="font-weight: 600;" class="text-dark">
+                    <small style="font-weight: 600;" class="text-secondary">
                         Al hacer click en Registrarse, aceptas los <a href="" target="_blank"
-                            class="text-primary">Términos y
-                            Condiciones de uso</a> de
-                        Manos.
+                            class="text-primary">Términos de uso</a> y <a href="" target="_blank"
+                            class="text-primary">Política de privacidad</a> de
+                        Invertir Joven.
                     </small>
                 </div>
 
