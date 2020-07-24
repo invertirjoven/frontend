@@ -15,6 +15,10 @@ body{
     padding-right: constant(safe-area-inset-right);
 }
 
+body.bg-light{
+    background-color: #F2F2F2 !important;
+}
+
 button.btn, input.btn, a.btn{
     /* Pill buttons */  
     border-radius: 100px;
@@ -173,12 +177,12 @@ label{
     color: #4D4D4D !important;
 }
 
-input.form-control{
+input.form-control, textarea.form-control{
     border-width: 0px;
     background-color: #F2F2F2;
 }
 
-input.form-control:focus{
+input.form-control:focus, textarea.form-control:focus{
     border-color: #FF9966;
     border-width: 2px;
     box-shadow: 0px 0px 0px;
@@ -254,6 +258,10 @@ div.bg-primary{
 
 div.bg-light{
     background-color: #BCBCBC !important;
+}
+
+nav.bg-light{
+    background-color: #F2F2F2 !important;
 }
 
 div.chapter{
@@ -441,4 +449,60 @@ p.text-secondary, small.text-secondary{
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;
     background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+div.header{
+    background-color: white;
+    border-color: #BCBCBC;
+    border-width: 2px;
+    border-style: solid;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 19px;
+    transition: all .2s ease-in-out;
+    height: 45px;
+}
+
+div.header-left{
+    border-radius: 10px 0px 0px 10px;
+    width: 45px;
+    color: #FF6619;
+}
+
+div.header-left:hover, div.header-right:hover{
+    background-color: #FF6619;
+    color: white;
+}
+
+div.header-right{
+    border-radius: 0px 10px 10px 0px;
+    width: 45px;
+    color: #FF6619;
+}
+
+a.no-decoration{
+    text-decoration: none !important;
+}
+
+div.free-plan-header{
+    background-image: linear-gradient(to top right, #666666, #BCBCBC);
+}
+
+div.free-plan-body{
+    font-size: 20px;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px; /* 0px top, 2px right, bottom and left */
+    border-color: #666666;
+}
+
+div.premium-plan-header{
+    background-image: linear-gradient(to top right, #242424, #666666);
+}
+
+div.premium-plan-body{
+    font-size: 20px;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px; /* 0px top, 2px right, bottom and left */
+    border-color: #242424;
 }
