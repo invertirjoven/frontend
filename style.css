@@ -5,7 +5,7 @@
     letter-spacing: 0.5px;
 }
 
-h2, h3{
+h1, h2, h3, h4{
     line-height: 1.5 !important;
 }
 
@@ -139,11 +139,11 @@ button.btn-outline-secondary:active{
     box-shadow: 0px 2px 3px #777 !important;
 }
 
-p.text-dark, h3.text-dark, label.text-dark, strong.text-dark, td.text-dark, h4.text-dark, h5.text-dark, h6.text-dark{
+p.text-dark, i.text-dark, h3.text-dark, label.text-dark, strong.text-dark, td.text-dark, h4.text-dark, h5.text-dark, h6.text-dark{
     color: #4D4D4D !important;
 }
 
-h3.text-light, h4.text-light, h5.text-light, label.text-light, strong.text-light, i.text-light, p.text-light{
+h1.text-light, h2.text-light, h3.text-light, h4.text-light, h5.text-light, label.text-light, strong.text-light, i.text-light, p.text-light{
     color: #BCBCBC !important;
 }
 
@@ -490,7 +490,6 @@ div.free-plan-header{
 }
 
 div.free-plan-body{
-    font-size: 20px;
     border-style: solid;
     border-width: 0px 1px 1px 1px; /* 0px top, 2px right, bottom and left */
     border-color: #666666;
@@ -501,8 +500,40 @@ div.premium-plan-header{
 }
 
 div.premium-plan-body{
-    font-size: 20px;
     border-style: solid;
     border-width: 0px 1px 1px 1px; /* 0px top, 2px right, bottom and left */
     border-color: #242424;
+}
+
+div.card.faq{
+    border-width: 0px;
+}
+
+div.card-header.faq{
+    background-color: #F2F2F2;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+div.card-body.faq{
+    text-align: justify;
+    background-color: #F2F2F2;
+    border-top: 1px solid #BCBCBC;
+    color: #4D4D4D;
+}
+
+.no-underline:hover{
+    text-decoration: none !important;
+}
+
+div.price-card{
+    background-color: white;
+    max-width: 250px;
+    border-radius: 25px;
+}
+
+p.small{
+    color: #4D4D4D;
+    font-size: 15px;
+    line-height: 20px;
 }
