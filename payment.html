@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-x: hidden;">
 
 <head>
     <meta charset="utf-8">
@@ -27,123 +27,72 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-
-    <!-- Navbar and progress bar container -->
-    <div class="container fixed-top mx-0 px-0" style="width: 100%; max-width: 2000px;">
-
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light px-3 bg-white">
-            <div class="container mx-auto mt-1" style="max-width:1000px">
-
-                <!-- Company logo-->
-                <a class="navbar-brand mx-auto" href="index.html">
-                    <img src="https://manos-web.s3-sa-east-1.amazonaws.com/logos/black_logo.png" alt="" height="70">
-                </a>
-
-                <!-- Custom toggler -->
-                <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                    style="height: 22px; width: 42px; border-color: white; background: url(https://manos-web.s3-sa-east-1.amazonaws.com/icons/toggler.svg) no-repeat; background-size: cover; border-radius: 0;">
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto text-center">
-                        <li class="nav-item active my-auto">
-                            <a class="nav-link text-secondary mx-3" href="index.html">
-                                <h5>Inicio</h5>
-                            </a>
-                        </li>
-                        <li class="nav-item my-auto">
-                            <a class="nav-link text-secondary mx-3" href="course.html">
-                                <h5>Cursos</h5>
-                            </a>
-                        </li>
-                        <li class="nav-item my-auto">
-                            <a href="login.html" class="mx-3 btn btn-lg btn-outline-primary w-100"
-                                style="min-width: 175px; max-width: 200px;">
-                                Mi cuenta
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Shadow effect for navbar on scroll down -->
-        <div class="progress w-100" style="height:2px; box-shadow: 0px 4px 6px #999; width:100%;">
-            <div class="progress-bar" role="progressbar" style="width: 100%; background-color:#fff;" aria-valuenow="100"
-                aria-valuemin="0" aria-valuemax="100">
-            </div>
-        </div>
-    </div>
+<body style="overflow-x: hidden;">
 
     <!-- Main section -->
     <section class="mx-auto w-100 pb-0 bg-light">
         <div class="row mx-auto my-0 pt-0" style="max-width: 1000px;">
-            <div class="col-5 col-md-4 p-0 d-none d-sm-block"
-                style="background-color: #333333;  min-height: 100vh; box-shadow: -5px 0px 10px rgba(0, 0, 0, 33%)">
-                <div class="container w-100 mx-auto text-center pt-4" style="margin-top:100px">
-                    <a href="profile.html">
-                        <i class="fas fa-user-circle fa-5x text-light"></i>
-                    </a>
-                </div>
-            </div>
+            <div class="col-5 p-0 d-none d-md-block p-5"
+                style="background-color: #333333;  min-height: 100vh; box-shadow: -5px 0px 10px #999999;">
 
-            <!-- Dropdown Menu for xs and sm screens -->
-            <div class="col-12 d-block d-sm-none px-4" style="background-color: #333333;">
-                <div class="dropdown mb-4" style="margin-top:111px">
-                    <button class="dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-house-user mr-2 ml-2"></i>
-                        Mi perfil
-                    </button>
-                    <div class="dropdown-menu w-100 pl-1 pt-1 pb-1" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item text-dark py-2 active" href="profile.html">
-                            <i class="fas fa-house-user mr-2"></i>
-                            Mi perfil
-                        </a>
-                        <div class="dropdown-divider my-0"></div>
-                        <a class="dropdown-item text-dark py-2" href="profile-edit.html">
-                            <i class="fas fa-user-edit mr-2"></i>
-                            Editar mi perfil
-                        </a>
-                        <div class="dropdown-divider my-0"></div>
-                        <a class="dropdown-item text-dark py-2" href="password-edit.html">
-                            <i class="fas fa-user-lock mr-2"></i>
-                            Cambiar mi contraseña
-                        </a>
+                <!-- Back link -->
+                <a href="premium.html" class="no-underline text-white">
+                    <div style="display: flex; align-items: center;">
+                        <i class="fas fa-angle-left fa-2x mr-2"></i>
+                        <img src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/logos/white_logo.svg" alt=""
+                            style="height: 50px;">
                     </div>
-                </div>
+                </a>
+                <h3 class="text-light mt-5 mb-0">
+                    Suscríbete a Invertir Joven Premium
+                </h3>
+
+                <!-- Monthly price -->
+                <h1 class="text-light mt-4">$3.00 <span style="font-size: 1.2rem;">/mes</span></h1>
             </div>
 
-            <div class="col-12 col-sm-7 col-md-8"
-                style="background-color: white; box-shadow: 5px 0px 10px rgba(0, 0, 0, 25%);">
+            <!-- For xs and sm -->
+            <div class="col-12 d-block d-md-none p-4" style="background-color: #333333;">
 
-                <div class="container d-none d-sm-block" style="height:100px;"></div>
+                <!-- Back link -->
+                <a href="premium.html" class="no-underline text-white">
+                    <div style="display: flex; align-items: center;">
+                        <i class="fas fa-chevron-left mr-2" style="font-size: 1.4rem;"></i>
+                        <img src="https://invertirjoven.s3-sa-east-1.amazonaws.com/web/logos/white_logo.svg" alt=""
+                            style="height: 40px;">
+                    </div>
+                </a>
 
-                <h3 class="text-center text-dark mt-4">Pago con tarjeta</h3>
+                <h4 class="mt-3 text-light text-center">
+                    Suscríbete a Invertir Joven Premium
+                </h4>
+
+                <!-- Monthly price -->
+                <h2 class="text-light mt-3 text-center mb-0">$3.00 <span style="font-size: 1rem;">/mes</span></h2>
+            </div>
+
+            <div class="col-12 col-md-7 p-5" style="background-color: white; box-shadow: 5px 0px 10px #aaaaaa;">
+
+                <h3 class="text-center text-dark">Pago con tarjeta</h3>
                 <div class="w-100 mx-auto px-3" style="max-width: 550px;">
 
                     <!-- Payment Form -->
                     <form class="mx-auto w-100">
 
-                        <!-- Email input -->
-                        <div class="form-group">
-                            <label class="text-dark" for="email">Correo</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                        </div>
-
                         <!-- Card number input -->
-                        <div class="form-group">
+                        <div class="form-group mt-4 mb-0">
                             <label class="text-dark" for="card_number">Número de tarjeta</label>
+                            <button type="button" class="" data-toggle="tooltip" data-placement="top"
+                                title="Todas las transacciones son encriptadas y seguras."
+                                style="background-color: white; border: 0px;">
+                                <i class="fas fa-lock text-dark"></i>
+                            </button>
                             <input type="card_number" class="form-control" id="card_number"
                                 aria-describedby="emailHelp">
                         </div>
 
                         <!-- Due Date input -->
-                        <label class="" for="due_date">Fecha de nacimiento</label>
+                        <label class="mt-4 text-dark" for="due_date">Fecha de vencimiento</label>
                         <div class="row">
                             <div class="col-6">
                                 <!-- Month -->
@@ -191,17 +140,28 @@
                             </div>
                         </div>
 
-                        <!-- Due Date input -->
-                        <label class="mt-3" for="ccv">Código de seguridad</label>
+                        <!-- CCV input -->
+                        <label class="mt-4 text-dark" for="ccv">Código de seguridad</label>
                         <button type="button" class="" data-toggle="tooltip" data-placement="top"
                             title="El código de seguridad se refiere a los 3 o 4 números en la parte posterior o frontal de tu tarjeta."
                             style="background-color: white; border: 0px;">
-                            <i class="fas fa-lock text-dark"></i>
+                            <i class="far fa-question-circle text-dark"></i>
                         </button>
                         <div class="row">
                             <div class="col-6">
-                                <input type="ccv" class="form-control" id="ccv" aria-describedby="ccv">
+                                <input type="number" class="form-control" id="ccv" aria-describedby="ccv">
                             </div>
+                        </div>
+                        <div class="text-center mx-auto mt-4">
+                            <button type="submit" class="btn btn-lg btn-primary lift w-50">
+                                Suscribirme
+                            </button>
+                        </div>
+                        <div class="container w-75 text-center mt-3 mb-5">
+                            <p class="small text-medium">
+                                La suscripción se renovará automáticamente cada mes por $3.00. Puedes cancelarlo desde
+                                Mi cuenta.
+                            </p>
                         </div>
 
                     </form>
