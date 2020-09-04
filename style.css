@@ -33,6 +33,11 @@ button.btn-primary, input.btn-primary, a.btn-primary{
     font-weight: bold;
 }
 
+a.btn-paypal, button.btn-paypal, input.btn-paypal{
+    color: #ffffff !important; 
+    background-image: linear-gradient(to bottom right, #002F86, #019CDE);
+}
+
 button.btn-dark-primary, input.btn-dark-primary, a.btn-dark-primary{
     color: #ffffff;
     background-color:#FF742F;
@@ -171,7 +176,7 @@ h3.text-white, h4.text-white, h5.text-white, label.text-white, strong.text-white
     border-radius: 0 0 100px 0;
 }
 
-label{
+label.quiz-option{
     font-weight: 600;
     font-size: 18px;
     color: #4D4D4D !important;
@@ -409,7 +414,7 @@ div.tooltip-inner{
     box-shadow: 0px 0px 5px #aaa;
 }
 
-input.form-check-input{
+input.form-check-input.quiz-option{
     /* Double-sized Checkboxes */
     -ms-transform: scale(2); /* IE */
     -moz-transform: scale(2); /* FF */
